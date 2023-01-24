@@ -11,7 +11,7 @@
     - [Run-Times](#run-times)
     - [Class diagram](#class-diagram)
     - [Classes](#classes)
-    - [Tests](#Tests)
+    - [Tests](#tests)
 
 
 # Our Project:
@@ -36,6 +36,7 @@
 
 > to get start this project, you just need to download the codes to your workspace and run them of any JDK. <br>
 > for the part 1 you just need to run the main class, you can also change the amount of files in the CreateFiles function and see what happen. <br>
+> for part 2 you can create task with priority and use the customExcuter for threadpool with priority queue.
 
 
 # Callable 
@@ -65,8 +66,11 @@
 # Class diagram
 
 > **class diagram for part 1:** <br>
-> <img width="404" alt="דיאגרמת מחלקות חלק 1" src="https://user-images.githubusercontent.com/119002109/213945381-169c0c29-b77a-4e2a-aa03-7dcc35c8d07c.png"> <br>
-> 
+> <img width="484" alt="דיאגרנה חלק א" src="https://user-images.githubusercontent.com/119002109/214382278-98184b22-1ce6-491c-bbe1-8961343ae337.png"> <br>
+>  **class diagram for part 2:** <br>
+> <img width="437" alt="דיאגרמה חלק ב" src="https://user-images.githubusercontent.com/119002109/214401620-20106c93-c818-4590-ad55-85bd24ab6c79.png"> <br>
+
+
 
 
 
@@ -84,3 +88,17 @@
 > 
 > **MyThread:** this class is the realizition of the Run() function for the threads. <br>
 > **MyThreadPool:** this class is the realizition of the Call() function for the threadpool. <br>
+> 
+> **part 2:** <br>
+> **TaskType:** this class defination the type of the task <br>
+> **Task:** this class create the tasks, in additional this class is the class that implements the Callable interface and realizition the Call() function <br>
+> **CustomExecutor:** this class have the excuter to the threadpool, he realizition the submits function that we required to realizition. <br>
+> in additional we have in the class the getCurrentMax function that give us the max priority in the  queue of the threadpool. how we realizition that: <br>
+> we create a class array, when we invoke submit function we increase the arr index in the priority index, for example if we submit task with priority 1 
+> we do arr[1]++. and if the queue is empty we equate to zero the arr. in the getCurrentMax we save the size of the queue and the number of submits we did until
+> we unvoke the function, then we can to check the ratio between the size and the submitNumbers, for example if the size bigger than submitNumbers minus arr[1]
+> (size > submitNumbers - arr[1]) i know that not all the tasks with priority 1 finish yet, hence the priorityMax is 1.
+
+# Tests
+> **part 1:** we make our tests in the main class we give here. <br>
+> **part 2:** we use the tests we get in the assigment
