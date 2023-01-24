@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="286.6179205230976" y="258.478248376311">part_a.MyThreadPool</node>
+    <node x="142.52672358676023" y="-14.42925959040025">part_a.Ex2_1</node>
+    <node x="-72.66468029337857" y="2.924178804787317">part_a.MyThread</node>
+    <node x="65.57508899209404" y="218.43723334798227">part_a.Ex2</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Compact" zoom="1.2587601078167117" showDependencies="false" x="201.99999999999997" y="170.5" />
+  <SelectedNodes>
+    <node>part_a.MyThreadPool</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
